@@ -72,3 +72,5 @@ sudo apt-get install python3 python-dev python3-dev build-essential libssl-dev l
 
 pip3 install --user leidenalg
 
+### Webhost 
+http://duspviz.mit.edu/tutorials/localhost-servers/
