@@ -1,0 +1,53 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery.min.js"></script>
+  <script> 
+$(function() {
+    $("#navigation").load("navigation.html");
+});
+  </script>
+</head>
+
+<body>
+    
+  <div id="navigation">
+  </div>
+
+<div class="content1">
+<h1>
+Getting Started 
+</h1>
+<p>If you are a Computational Biologist using Python Notebook or R, we suggest starting with a guided walkthrough.</p>
+<p>You can also visit <a href="https://jupyter.org/install.html">jupyter</a> for more information about Python Notebook, 
+ and <a href="https://scanpy.readthedocs.io/en/stable/">scanpy</a> for single cell analysis using Python. </p>
+ 
+<h1>
+<a href="#installation" aria-hidden="true"></a>Walkthrough Examples</h1>
+<p> 1) Run cell ranger (advanced user) from python notebook to generate counts data: <a href="runcellranger.html"> Run cell ranger. 
+  </a> </p>
+<p> 2) Python user: Analyze using counts matrix (10X Genomic V3 Use), and load results into single cell explorer database (MongoDB):   
+<a href="PBMC3k.html"> PBMC3k example. </a> </p>
+<pre class="editor editor-colors"><div class="line"><span class="text plain null-grammar"><span>The example demonstrated
+-- the analysis of 10X RNAseq using scanpy module
+-- Need of parameter optimization for leiden algorhism to find right cell clusters
+-- UMAP or t-SNE can be used by experimental scientists to annotate cells from their perspectives or goals</span></span></div></pre>
+
+<p> 3) R user: Import counts table and tsne/umap coordinate from Seurat object or loom files: <a href="importdata.html"> Import Data. </a> </p>
+<pre class="editor editor-colors"><div class="line"><span class="text plain null-grammar"><span>The example demonstrated
+  -- extract results from Seurat object to single cell explorer  
+  -- Loom files support 
+  </span></span></div></pre>
+
+<p> 4) Retrieve annoated cells using API and identify differentially expressed genes: <a href="DEGexample.html"> DEG analysis  
+     (using API). </a> </p>
+
+     <pre class="editor editor-colors"><div class="line"><span class="text plain null-grammar"><span>The example demonstrated
+        -- use http API from application url to retrieve cell types and normalized expression matrix from single cell explorer database  
+        -- find differentially expressed genes  
+        </span></span></div></pre>
+<p> </p>
+</div>
+
+</body>
+</html>

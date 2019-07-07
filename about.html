@@ -1,0 +1,87 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery.min.js"></script>
+  <script> 
+$(function() {
+    $("#navigation").load("navigation.html");
+});
+  </script>
+</head>
+
+<body>
+    
+  <div id="navigation">
+  </div>
+
+<h1>
+<center>Design</center>
+</h1>
+<center> <p> <img src="img/ComponentView.gif"> </p> </center>
+<p> <h2> Rationale of using Python Notebook </h2></p>
+<p> We demonstrated how to use Notebook to communicate with Single Cell Explorer system. <br>
+   You can find more
+  about why Jupyter is the data scientists’
+    computational notebook of choice <a href="https://www.nature.com/articles/d41586-018-07196-1"> here </a>. 
+</p>
+<p> <h2>Why Django, not R Shiny?</h2> </p>
+<p>Django is a high-level Python Web framework that enables rapid development and clean, pragmatic design. 
+   With tools including Django ORM, Middlewares, Authentication, HTTP libraries, Multi-site support, 
+   i18n, Django Admin, and a template engine, it removes the hassle in Web development, database integration, and content
+   management. We chose Django to make the development journey easier for the future.     
+   <br>
+   While Shiny is particularly great for fast prototyping and fairly easy to use, it has problems. R stack is weak in retrieving and saving data to the database and in multipage support. 
+   Better concurrent user support requires Shiny Server Pro. <br> Also, it is hard to add extra functionality not already in the package or Dash.  </p>
+
+<p><h2> Compared to Cellxgene software  </h2></p>
+<p>Cellxgene is an interactive data explorer for checking single-cell transcriptomics datasets. However, the time 
+   required to load h5ad files for a particular dataset or map to cellxgene makes it difficult for it to serve as a data portal for
+   more datasets with concurrent users. </p>
+<table style="border-spacing: 10px; border:2px solid black;">
+  <tr>
+    <th >Function</th>
+    <th>Cellxgene</th>
+    <th>scExplorer</th>
+  </tr>
+  <tr>
+    <td>Multiple datasets</td>
+    <td>Not yet, needs to load h5ad each time     </td>
+    <td>Supported as a data portal</td>
+  </tr>
+  <tr>
+    <td>Gene Searches</td>
+    <td>Single and double</td>
+    <td>Single, double, multiple</td>
+  </tr>
+  <tr>
+    <td>Manual Annotattion</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Data Visualization</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Dataset registration</td>
+    <td>No </td>
+    <td>Supports Data managment </td>
+  </tr>
+  <tr>
+    <td>API and Re-analysis</td>
+    <td>No</td>
+    <td>Integrated with Python notebook</td>
+  </tr>
+  
+</table>
+<p>Others</p>
+<p>The conda installation method is not currently available.</p>
+<h1>
+
+
+<pre class="editor editor-colors"><div class="line"><span class="text plain null-grammar"><span>apm install atom-material-ui</span></span></div></pre>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+
+  <script src="jquery.min.js"></script>
+  <script> 
+    $(function() {
+    $("#navigation").load("navigation.html");
+    });
+  </script>
+</head>
+
+<body>
+<div id="navigation">
+</div>
+
+<div class="content1">
+<h2>
+Use API to Retrieve Data and Annotated Information from Notebook for reanalysis
+</h2>
+<p>  </p>
+<p> </p>
+<h1>
+<a href="apiExample.html" aria-hidden="true"> API Walkthrough Examples </a> </h1>
+<p> Overview </p>
+<pre class="editor editor-colors"><div class="line"><span class="text plain null-grammar"><span></span></span></div></pre>
+<table>
+    <tr>
+      <th>API name</th>
+      <th>Function</th>
+      
+    </tr>
+    <tr>
+      <td>getAllClstrsByClstrsType</td>
+      <td>Retrieve table of cell barcodes and annotated cell type in a specific map</td>
+      
+    </tr>
+    <tr>
+      <td>getNormalizedGeneExpr</td>
+      <td>Get normalized counts (for the list of gene of interest) from specific cell types in specific map</td>
+      
+    </tr>
+    <tr>
+      <td>getAllNormalizedGeneExpr</td>
+      <td>Get full normalized gene counts matrix from specific cell types in specific map</td>
+     
+    </tr>
+    <tr>
+      <td>getMarkGenesByMapidAndClusterType</td>
+      <td>Get annotated marker genes</td>
+      
+    </tr>
+    <tr>
+      <td>getMaps</td>
+      <td>Get meta data from specific map</td>
+      
+    </tr>
+    <tr>
+      <td>exportAllClstrsByClstrsType</td>
+      <td>Export and save cellbarcode and annotated cell type from specific map in csv files</td>
+      
+    </tr>
+    
+  </table>
+  
+
+</div>
+
+</body>
+</html>

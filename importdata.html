@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="install.html">Install</a>
+  <a href="tutorial.html">Tutorial</a>
+  <a href="analysis.html">Analysis</a>
+  <a href="api.html">API</a>
+  <a href="about.html">About</a>
+</div>
+<div class="content1">
+<h1>
+Getting Started 
+</h1>
+<p>For advanced users (computational Biologists) using R, please read the following FAQ for import data objects</p>
+ 
+<h2>
+<a href="#installation" aria-hidden="true"></a> How can I load my analysis or Seurat Object (for R user) into single cell explorer database? </h2>
+<p> You can export results from seurat object to csv files including the expression matrix and embedded
+    data (UMAP or t-SNE) and metadata (study information) firstly using <a href="Seuratexport.html"> import Seurat object guide </a> 
+    , put three files in one folder, followed by a python script to load three files into MongoDB.        
+<a href="LoadCSVs.html"> load to MongoDB </a> </p>
+<h2><a href="#installation" aria-hidden="true"></a> How can I load Loom files (for R user) into single cell explorer database? </h2>
+<p> You can export results from loom files to csv files including the expression matrix and embedded
+    data (UMAP or t-SNE) and metadata (study information) firstly using <a href="ReadLoomR.html"> import Loom file </a>, put three files in one folder,
+    followed by a python script to load three files into MongoDB. The latest version of lommpy (Version 2.0.17) has backward-compatible issues for a few published single cell data,
+    therefore we do not provide example scripts using loompy at this stage.      
+<a href="LoadCSVs.html"> load to MongoDB </a> </p>
+<a href="#installation" aria-hidden="true"></a> <h2>Can I use my own database? </h2>
+<p> Yes, as long as you followed our walkthrough examples, You can host MongoDB in any server as long as it is accessable
+    for the single cell explorer application. You can dump your old data into MongoDB using our import examples described above. 
+    Basically you just need to create three csv files for each map, then load it. <a href="LoadCSVs.html"> load to MongoDB </a> </p>
+
+</div>
+</body>
+</html>

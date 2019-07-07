@@ -1,0 +1,58 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery.min.js"></script>
+  <script> 
+    $(function() {
+    $("#navigation").load("navigation.html");
+    });
+  </script>
+</head>
+
+<body>
+    
+  <div id="navigation">
+  </div>
+      
+<div class="content1">
+<p>
+ <!-- <center> <img src="img/sclogo2.jpg", alt="Smiley face" height="150" width="610">  </center> -->
+</p><h1>
+Single Cell Explorer
+</h1>
+<p> Single Cell Explorer is designed to establish a collaborative platform between experimental biologists and bioinformatics scientists. High dimensional data
+   contains tremendous amounts of information, and directly exploring the data can be  
+   more useful than just reading the companion article.</p>
+<h2 style="text-indent: 3%">Goals</h2>
+<ol type="1" title="Goals">
+    <li>Establish a collaborative platform between experimental biologists and bioinformatics scientists</li>
+    <li>Enable experimental biologists to explore single cell sequencing datasets to understand both the heterogeneity
+        of cells and samples and technical challenges. This will facilitate better study design with larger sample sizes</li>
+    <li>Allow experimental and computational scientists to collaborate on refining parameters and algorithms.</li>
+    <li>Make single cell data available for everyone.</li>
+
+ </ol>
+
+<h1>
+<a href="#installation" aria-hidden="true"></a>Collaborative Cell Type Identification</h1>
+<p> Choosing single cell cluster identification parameters can be ambiguous.  The following plot shows various clustering results using different resolution parameters by the leiden algorhism
+    (scanpy.api.tl.leiden function). It is not straightforward to determine which 
+    resolution to use. A resolution of 1, the default value, produces too many clusters in comparison with ground true. </p>    
+<img src="img/leiden_PBMC.jpg", alt="leiden resolution optimization" height="400" width="600"> 
+<p> The ground truth can be reflected by the following UMAP, which was painted by known PBMC marker genes. This process can be
+  done by biologists or domain experts 
+  (Immunologists) using Single Cell Explorer, by leveraging prior knowledge. The result actually indicates a resolution of 0.2 might
+    best reflect the current knowledge of PBMC cell type classification.</p>
+<img src="img/markers_PBMC.jpg", alt="marker genes in PBMC UMAP" height="600" width="800"> 
+<p> Without programming skills, biologists can study interesting cell clusters based on t-SNE or UMAP using freehand selection of
+    cell clusters, followed by checking cell marker expression or identifying unknown cell markers using
+    Single Cell Explorer. Such coordination between Computational Biologists and Experimental Scientists will make
+    analysis and decisions much faster. Unannotated cells can be left to colleagues or other experts to
+    examine. The results can be shared after t-SNE or UMAP have been generated. Annotation can be used for further analysis.
+ </p>
+<pre class="editor editor-colors"><div class="line"><span class="text plain null-grammar"><span>  
+   </span></span></div></pre>
+</div>
+
+</body>
+</html>
